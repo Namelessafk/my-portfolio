@@ -1,0 +1,223 @@
+/* styles.css */
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Estilos do cabeçalho */
+  header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav h1 {
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  /* Estilos da seção hero */
+  #hero {
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-content {
+    text-align: center;
+  }
+  
+  .hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content span {
+    color: #00ff00;
+  }
+  
+  /* Estilos da seção projects */
+  #projects {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 40px 0;
+    backdrop-filter: blur(10px);
+  }
+  
+  .project {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project img {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .project h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos da seção contact */
+  #contact {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 40px 0;
+  }
+  
+  form input,
+  form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+  }
+  
+  form button {
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #000;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+  }
+  
+  /* Estilos do rodapé */
+  footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+  }
+  
+
+  .title {
+    font-size: 60px;
+    width: 249px;
+    color: red;
+    position: relative;
+    background-color: #000;
+    justify-content: center;
+    display: flex;
+    left: 43%;
+  }
+  
+  .letter {
+    display: inline-block;
+    opacity: 0;
+    position: relative;
+    animation: fadeIn 5s forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+  .sparks-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  
+  .spark {
+    width: 2px;
+    height: 6px;
+    background-color: #39f110;
+    border-radius: 50%;
+    position: absolute;
+    animation: sparkAnimation 1s linear;
+  }
+  
+  @keyframes sparkAnimation {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .light {
+    width: 4px;
+    height: 4px;
+    background-color: rgba(255, 1, 1, 0.8);
+    border-radius: 50%;
+    position: absolute;
+    animation: lightAnimation 1.5s linear;
+  }
+  
+  @keyframes lightAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
