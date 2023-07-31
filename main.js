@@ -1,7 +1,7 @@
 function createSpark() {
     const spark = document.createElement('div');
     spark.classList.add('spark');
-    const titleRect = document.querySelector('.title').getBoundingClientRect();
+    const titleRect = document.querySelector('.nav-wrapper').getBoundingClientRect();
     const x = titleRect.left + Math.random() * titleRect.width;
     const y = titleRect.top + Math.random() * titleRect.height;
     spark.style.left = `${x}px`;
@@ -16,7 +16,7 @@ function createSpark() {
   function createLight() {
     const light = document.createElement('div');
     light.classList.add('light');
-    const titleRect = document.querySelector('.title').getBoundingClientRect();
+    const titleRect = document.querySelector('.nav-wrapper').getBoundingClientRect();
     const x = titleRect.left + Math.random() * titleRect.width;
     const y = titleRect.top + Math.random() * titleRect.height;
     light.style.left = `${x}px`;

@@ -1,13 +1,24 @@
 /* styles.css */
+@font-face {
+  font-family: 'Nova Square';
+  src: url('fonts/NovaSquare-Regular.ttf') format('truetype');
+}
 
 /* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-image: url(img/space.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: 'Nova Square', sans-serif;
   
   }
+
+
   
   .container {
     max-width: 960px;
@@ -36,33 +47,17 @@ body {
   
   /* Estilos do cabeçalho */
   header {
-    background-color: rgba(0, 0, 0, 0.7);
+  
     padding: 20px;
   }
   
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav h1 {
-    font-size: 24px;
-    color: #fff;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin-left: 20px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    font-size: 16px;
+nav{
+  background-color: transparent !important;
+}
+
+
+  .custom-nav-item:hover {
+    background-color: rgb(34, 34, 34); /* Substitua "green" pela cor desejada (por exemplo, #00ff00 para verde claro) */
   }
   
   /* Estilos da seção hero */
@@ -72,6 +67,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    
   }
   
   .hero-content {
@@ -146,23 +142,18 @@ body {
   
   /* Estilos do rodapé */
   footer {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    text-align: center;
-    backdrop-filter: blur(10px);
+    color: red;
+    position: relative;
+  }
+
+  h3{
+    position: relative;
+    z-index: 1;
+    margin: 0 !important;
+    padding: 0;
   }
   
 
-  .title {
-    font-size: 60px;
-    width: 249px;
-    color: red;
-    position: relative;
-    background-color: #000;
-    justify-content: center;
-    display: flex;
-    left: 43%;
-  }
   
   .letter {
     display: inline-block;
@@ -187,10 +178,12 @@ body {
   }
   
   .spark {
-    width: 2px;
-    height: 6px;
-    background-color: #39f110;
-    border-radius: 50%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 3px 3px; /* Ajuste os valores para personalizar a forma */
+    border-color: transparent transparent #bcbcbc transparent; /* Cor da folha */
+    clip-path: polygon(50% 0%, 100% 35%, 80% 95%, 50% 100%, 20% 95%, 0% 35%);
     position: absolute;
     animation: sparkAnimation 1s linear;
   }
@@ -205,9 +198,9 @@ body {
   }
   
   .light {
-    width: 4px;
-    height: 4px;
-    background-color: rgba(255, 1, 1, 0.8);
+    width: 2px;
+    height: 2px;
+    background-color: #b7b7b7; /* Vermelho */
     border-radius: 50%;
     position: absolute;
     animation: lightAnimation 1.5s linear;
@@ -221,3 +214,45 @@ body {
       opacity: 1;
     }
   }
+
+  .custom-shape-divider-top-1690782601 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1690782601 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 164px;
+}
+
+.custom-shape-divider-top-1690782601 .shape-fill {
+    fill: #000000;
+}
+
+.custom-shape-divider-bottom-1690784757 {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1690784757 svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 180px;
+}
+
+.custom-shape-divider-bottom-1690784757 .shape-fill {
+  fill: #000000;
+}
+
