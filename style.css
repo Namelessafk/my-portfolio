@@ -88,14 +88,18 @@ nav{
   }
   
   .hero-content span {
-    color: #00ff00;
+    color: #fff54c;
+  }
+
+  .container{
+    background-color: rgba(255,255,255,0.41);
+    border-radius: 15px;
+    backdrop-filter: blur(40px);
   }
   
   /* Estilos da seção projects */
   #projects {
-    background-color: rgba(255, 255, 255, 0.7);
     padding: 40px 0;
-    backdrop-filter: blur(10px);
   }
   
   .project {
