@@ -121,6 +121,10 @@ nav{
     margin-bottom: 10px;
   }
   
+  .project h3 span{
+    color: #ff6a41;
+  }
+  
   /* Estilos da seção contact */
   #contact {
     background-color: rgba(0, 0, 0, 0.7);
@@ -267,4 +271,7 @@ nav{
 .custom-shape-divider-bottom-1690784757 .shape-fill {
   fill: #000000;
 }
+
+
+
 
