@@ -272,6 +272,11 @@ nav{
   fill: #000000;
 }
 
+.modal-content{
+  background-color: #000 !important;
 
+}
 
-
+.modal-overlay{
+  height: 200% !important;
+}

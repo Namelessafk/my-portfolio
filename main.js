@@ -202,7 +202,28 @@ init();
 // Chama a função step() para iniciar o loop da animação
 step();
 
+document.addEventListener('DOMContentLoaded', function() {
+  var modal = document.getElementById('modal1');
+  var openButton = document.getElementById('open-modal-button');
+  
+  
+  // Inicializa o modal e adiciona um callback para o evento 'open'
+  var modalInstance = M.Modal.init(modal, {
+    onOpenStart: function() {
+      console.log('Modal aberto');
+      modal.style.borderRadius = '10px';
+    },
+    onCloseStart: function() {
+      console.log('Modal fechado');
+      // Adicione aqui qualquer ação que desejar quando o modal é fechado
+    }
+  });
 
+  // Abrir o modal quando o botão "Abrir Modal" é clicado
+  openButton.addEventListener('click', function() {
+    modalInstance.open();
+  });
+});
 
 
 

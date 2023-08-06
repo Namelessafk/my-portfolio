@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,34 +8,38 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
+
 <body>
+    
   <div class="custom-shape-divider-top-1690782601">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+      <path
+        d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+        class="shape-fill"></path>
     </svg>
-</div>
-</div>
+  </div>
+  </div>
   <header>
     <nav>
       <div id="nav" class="nav-wrapper">
-      <div class="brand-logo">
-        <span class="letter">P</span>
-        <span class="letter">O</span>
-        <span class="letter">R</span>
-        <span class="letter">T</span>
-        <span class="letter">F</span>
-        <span class="letter">O</span>
-        <span class="letter">L</span>
-        <span class="letter">I</span>
-        <span class="letter">O</span>
+        <div class="brand-logo">
+          <span class="letter">P</span>
+          <span class="letter">O</span>
+          <span class="letter">R</span>
+          <span class="letter">T</span>
+          <span class="letter">F</span>
+          <span class="letter">O</span>
+          <span class="letter">L</span>
+          <span class="letter">I</span>
+          <span class="letter">O</span>
+        </div>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li class="custom-nav-item"><a href="#about">Sobre</a></li>
+          <li class="custom-nav-item"><a href="#projects">Projetos</a></li>
+          <li class="custom-nav-item"><a href="#contact">Contato</a></li>
+        </ul>
       </div>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li class="custom-nav-item"><a href="#about">Sobre</a></li>
-        <li class="custom-nav-item"><a href="#projects">Projetos</a></li>
-        <li class="custom-nav-item"><a href="#contact">Contato</a></li>
-      </ul>
-    </div>
-    <div class="sparks-container"></div>
+      <div class="sparks-container"></div>
     </nav>
   </header>
 
@@ -49,7 +54,9 @@
   <section id="about">
     <div class="container">
       <h2>Sobre Mim</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel purus eu nulla tincidunt aliquet. Proin volutpat efficitur tortor, a vulputate magna pharetra in. Integer eget ipsum non massa feugiat faucibus. Nullam consectetur posuere volutpat.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel purus eu nulla tincidunt aliquet. Proin
+        volutpat efficitur tortor, a vulputate magna pharetra in. Integer eget ipsum non massa feugiat faucibus. Nullam
+        consectetur posuere volutpat.</p>
     </div>
   </section>
 
@@ -59,7 +66,18 @@
       <div class="project">
         <h3>Projeto Particulas: <span>7.500</span> Particulas &#128552</h3>
         <div id="particle-container"></div>
-        <a href="#">Ver Mais</a>
+
+        <!-- Modal Trigger -->
+        <button id="open-modal-button" class="btn modal-trigger">Modal</button>
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+          </div>
+        </div>
+
       </div>
       <div class="project">
         <img src="project2.jpg" alt="Projeto 2">
@@ -81,13 +99,15 @@
       </form>
     </div>
   </section>
-  
-  
+
+
   <footer>
     <h3> so pra rir</h3>
     <div class="custom-shape-divider-bottom-1690784757">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+        <path
+          d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+          class="shape-fill"></path>
       </svg>
     </div>
   </footer>
@@ -96,4 +116,5 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 </body>
+
 </html>
