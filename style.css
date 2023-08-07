@@ -290,3 +290,15 @@ nav{
   font-family: 'Nova Square', sans-serif ;
   font-weight: bold;
 }
+
+
+@media screen and (max-width: 1350px) {
+  .container{
+    width: 901px !important;
+  }
+
+  .project {
+    /* Defina a largura máxima de 833px quando a tela for menor que 1350px */
+    width: 833px;
+  }
+}
