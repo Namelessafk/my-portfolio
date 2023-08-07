@@ -51,7 +51,7 @@ THICKNESS = Math.pow(10, 2),
 // Define o espaçamento entre as partículas
 SPACING = 3,
 // Define a margem ao redor da grade
-MARGIN = 50,
+MARGIN = 25,
 // Define a cor das partículas
 COLOR = 220,
 // Define o coeficiente de arrasto para controlar o movimento das partículas

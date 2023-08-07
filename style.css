@@ -24,10 +24,11 @@ body {
     max-width: 960px;
     margin: 0 auto;
     padding: 40px;
-    background-color: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(255 255 255 / 7%);
+    border-radius: 15px;
+    color: #fff;
+    backdrop-filter: blur(40px);
   }
   
   h2 {
@@ -92,8 +93,9 @@ nav{
   }
 
   .container{
-    background-color: rgba(255,255,255,0.41);
+    background-color: rgb(255 255 255 / 7%);
     border-radius: 15px;
+    color: #fff;
     backdrop-filter: blur(40px);
   }
   
@@ -103,7 +105,7 @@ nav{
   }
   
   .project {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgb(0 0 0 / 84%);
     color: #fff;
     padding: 20px;
     margin-bottom: 40px;
@@ -272,11 +274,19 @@ nav{
   fill: #000000;
 }
 
-.modal-content{
+.modal{
   background-color: #000 !important;
 
 }
 
 .modal-overlay{
   height: 200% !important;
+  top: -60% !important;
+  width: 200% !important;
+  left: -23% !important;
+}
+
+.btn{
+  font-family: 'Nova Square', sans-serif ;
+  font-weight: bold;
 }
