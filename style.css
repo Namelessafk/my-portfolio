@@ -52,7 +52,7 @@ body {
    color: #ff7a2a !important;
   }
   a {
-    color: #fff;
+    color: #fff !important;
     text-decoration: none;
   }
   
