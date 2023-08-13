@@ -6,10 +6,6 @@ Bem-vindo ao meu portfólio! Aqui você encontrará uma coleção dos meus proje
 
 Este projeto tem como objetivo apresentar minha jornada como desenvolvedor web front-end, destacando minhas habilidades, paixões e conquistas ao longo do caminho. De projetos estéticos de listas de tarefas a implementações avançadas em JavaScript, este portfólio é tanto um reflexo do meu progresso quanto uma vitrine das minhas criações.
 
-## Recursos Principais
-
-- **To-do List Aesthetic**: Um projeto de lista de tarefas com um toque artístico, criando uma experiência mais envolvente e esteticamente agradável. [Confira no CodePen](https://codepen.io/namelessafk/pen/PodpOqJ)
-
 ## Estrutura do Projeto
 
 A estrutura dos arquivos pode estar um pouco misturada entre inglês e português. Embora não seja o ideal em termos de padronização, isso reflete minha jornada de aprendizado e exploração das diferentes linguagens.
